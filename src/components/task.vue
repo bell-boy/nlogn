@@ -6,6 +6,6 @@
 
 <template>
     <span>{{ name }}</span>
-	<input type="checkbox" v-model="props.checked">
+	<input type="checkbox" @change="$emit('todo_check')" :checked="props.checked">
 	<br>
 </template>
